@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "lerna": "^4.0.0"
+  },
+  "name": "assignment",
+  "scripts": {
+    "start": "lerna run start",
+    "test": "lerna run test",
+    "new-version": "lerna version --conventional-commits --yes",
+    "diff": "lerna diff",
+    "start-web-client": "lerna run start --scope=web-client",
+    "start-server-api": "lerna run start --scope=server-api",
+    "clean": "lerna clean -y",
+    "hoist": "lerna bootstrap --hoist"
+  }
+}
